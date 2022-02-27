@@ -1,0 +1,12 @@
+
+https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+
+Mais Light:
+https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=c31613&secondary.color=cca23f
+https://codepen.io/sobralense/pen/WNbxOBz
+
+Mais Dark:
+https://codepen.io/sobralense/pen/QWwEgJQ
+
+https://medium.com/gravitdesigner/designing-a-basic-web-ui-kit-using-gravit-designer-ab18e90e307a
+

@@ -1,0 +1,31 @@
+| navbar |
+| título |
+
+Tocando: 
+| ordem - nome                  |
+| Música / ID no Karaokê        |
+| Descer - Sair - ordem         |
+
+Aguardando: 
+| ordem - nome                  |
+| Música / ID no Karaokê        |
+| Subir - Descer - Sair - ordem |
+
+Aguardando: 
+| ordem - nome                  |
+| Música / ID no Karaokê        |
+| Sair - ordem                  |
+
+
+bd:
+orderList = [
+  '132', 
+  '3211', 
+  '551', 
+  '12312'
+  ];
+
+orderList.indexOf('551');
+
+class="disabled"
+Para os controles inativos.

@@ -1,0 +1,191 @@
+@import 'config';
+@import 'utilities';
+@import 'form';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // overflow-y: scroll;
+  margin-left: calc(100vw - 100%);
+}
+
+body {
+  background: $white-color;
+  color: $black-color;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar - originalmente pensada
+// .navbar {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0.7rem 2rem;
+//   // position: fixed;
+//   z-index: 1;
+//   width: 100%;
+//   top: 0;
+//   border-bottom: solid 1px $primary-color;
+//   opacity: 0.9;
+
+//   // Problema do navbar
+//   ul {
+//     display: flex;
+//   }
+//   a {
+//     // color: $primary-color;
+//     padding: 0.45rem;
+//     margin: 0 0.25rem;
+
+//     &:hover {
+//       color: $dark-color;
+//     }
+//   }
+// }
+
+// Navbar
+.navbar {
+  display: grid;
+  // grid-template-columns: 7fr auto auto auto;
+  grid-template-columns: 1fr auto auto auto;
+  column-gap: 0.6rem;
+  align-items: center;
+  // Não necessário pro grid, só pro flex
+  // justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9;
+
+  .nav-item {
+    // color: $primary-color;
+    // padding: 0.45rem;
+    // margin: 0 0.25rem;
+
+    &:hover {
+      color: $dark-color;
+    }
+  }
+}
+
+.player-content {
+  border: 2px dashed $gray-color;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
+
+.player-data {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  column-gap: 0.6rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.player-name {
+  font-size: 1.5rem;
+}
+
+.player-controller {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-right: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+
+}
+
+.player-controller-order {
+  display: grid;
+  grid-template-columns: auto 2.5rem auto;
+}
+
+.player-order-input {
+  width: 100%;
+  padding: 0.1rem;
+  font-size: 1rem;
+  border: 1px solid $gray-color;
+}
+
+.player-button {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.player-order {
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+.player-music {
+  padding: 0.2rem;
+  font-size: 0.9rem;
+}
+
+// .btn-float{
+// 	position:fixed;
+// 	width:60px;
+// 	height:60px;
+// 	bottom:40px;
+//   right:40px;
+//   margin-bottom: 1rem;
+// 	background-color: $secondary-color;
+// 	color:#FFF;
+// 	border-radius:50px;
+// 	text-align:center;
+// 	box-shadow: 2px 2px 3px #999;
+// }
+
+// .btn-my-float{
+// 	margin-top:22px;
+// }
+
+// Cálculo base:
+// 60px (meta) divido por 16px (fonte base)
+// console.log(60 / 16) = 3.75rem
+// console.log(40 / 16) = 2.5rem
+.btn-float{
+	position:fixed;
+	width:3.75rem;
+	height:3.75rem;
+	// bottom:2.5rem;
+  // right:2.5rem;
+	bottom: 4.5rem;
+  right:1rem;
+  margin-bottom: 1rem;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  padding: 0;
+}
+
+.btn-my-float{
+
+	margin-top:1.375rem;
+}
